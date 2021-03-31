@@ -6,7 +6,7 @@
 }
 
 .theme-dark {
-	--color-primary: #ff9628;
+	--color-primary: #ffa445;
 	--color-secondary: #383838;
 	--color-background: #171717;
 	--color-text: #d2d2d2;
@@ -21,15 +21,23 @@ h1 {
 	font-family: 'Yellowtail', cursive;
 }
 
+h1 a {
+	padding: 0 8px;
+}
+
 h2 {
 	font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     letter-spacing: .09em;
 }
 
-body {
+html, body {
+	padding: 0;
 	margin: 0;
-	height: 100%;
+	min-height: 100%;
+}
+
+body {
 	background-color: var(--color-background);
 }
 
@@ -94,21 +102,13 @@ a.read-more:hover  {
 }
 
 .theme-toggle {
-	cursor: pointer;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
-	right: 16px;
-	top: 12px;
 	position: absolute;
+	top: 20px;
+	left: 20px;
 }
 
-.theme-dark .theme-toggle {
-	box-shadow: inset 30px 0px var(--color-primary);
-}
-
-.theme-light .theme-toggle {
-	box-shadow: inset 12px 0px var(--color-primary);
+.theme-toggle circle {
+	fill: var(--color-primary);
 }
 
 @keyframes shake {

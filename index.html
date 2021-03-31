@@ -11,10 +11,12 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Open+Sans:wght@300&family=Yellowtail&display=swap" rel="stylesheet">
 
-		<link rel="stylesheet" href="css/styles.css?v=2.0">
+		<link rel="stylesheet" href="css/styles.css?v=3.0">
 	</head>
 	<body>
-		<div class="theme-toggle" onclick="toggleTheme()"></div>
+		<svg class="theme-toggle" ondblclick="toggleTheme()" height="30" width="30" id="draggable">
+			<circle cx="15" cy="15" r="15" stroke-width="0"/>
+		</svg>
 		<div class="site">
 			<div class="container">
 				<main>
@@ -34,6 +36,7 @@
 				</main>
 			</div>
 		</div>
-		<script src="js/script.js"></script>
+		<script src="js/plain-draggable.min.js"></script>
+		<script src="js/script.js?v3.0"></script>
 	</body>
 </html>
