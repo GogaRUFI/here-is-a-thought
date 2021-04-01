@@ -63,4 +63,9 @@ function angle(cx, cy, ex, ey) {
 		draggable.left = 20;
 		draggable.top = 20;
 	};
+
+	const mc = new Hammer.Manager(document.getElementById('draggable'));
+	mc.on("doubletap", function(ev) {
+		toggleTheme();
+	});
 })();
