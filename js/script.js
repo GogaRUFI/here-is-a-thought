@@ -64,7 +64,7 @@ function angle(cx, cy, ex, ey) {
 		draggable.top = 20;
 	};
 
-	const mc = new Hammer.Manager(document.getElementById('draggable'));
+	const mc = new Hammer(document.getElementById('draggable'));
 	mc.on("doubletap", function(ev) {
 		toggleTheme();
 	});
