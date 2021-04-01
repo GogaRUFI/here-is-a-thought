@@ -26,6 +26,10 @@ function angle(cx, cy, ex, ey) {
 	var theta = Math.atan2(dy, dx);
 	theta *= 180 / Math.PI;
 	if (theta < 0) theta = 360 + theta;
+	if (theta <= 180)
+		theta += 180;
+	else
+		theta -= 180;
 	return Math.round(theta);
 }
 
