@@ -58,8 +58,8 @@ function angle(cx, cy, ex, ey) {
 
 	draggable.onDrag = function(position) {
 		const degree = angle(window.innerWidth / 2, window.innerHeight / 2, position.left, position.top);
-		const lightness = localStorage.getItem('theme') === 'theme-dark' ? 64 : 47;
-		setPrimaryColor(`hsl(${degree},100%,${lightness}%)`);
+		const x = localStorage.getItem('theme') === 'theme-dark' ? 100 : 70;
+		setPrimaryColor(`hsl(${degree},${x}%,50%)`);
 	};
 
 	draggable.onDragEnd = function(position) {

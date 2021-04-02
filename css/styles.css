@@ -1,12 +1,12 @@
 .theme-light {
-	--color-primary: hsl(43,100%,47%);
+	--color-primary: hsl(43,70%,50%);
 	--color-secondary: #d3d3d3;
 	--color-background: #f3f3f3;
 	--color-text: #4a4a4a;
 }
 
 .theme-dark {
-	--color-primary: hsl(43,100%,64%);
+	--color-primary: hsl(43,100%,50%);
 	--color-secondary: #383838;
 	--color-background: #171717;
 	--color-text: #d2d2d2;
